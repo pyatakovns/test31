@@ -1,0 +1,14 @@
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto ens3
+allow-hotplug ens3
+iface ens3 inet static
+	address 82.146.62.231
+	netmask 255.255.255.255
+	gateway 10.0.0.1
+	pointopoint 10.0.0.1
+	dns-nameservers 188.120.247.2 188.120.247.8 82.146.59.250
+	dns-search ru
